@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnSearchCarBrand"
+        android:layout_width="245dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="80dp"
+        android:onClick="clickSearchCarBrands"
+        android:text="Search Car Brands"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIdentifyCar" />
+
+    <Button
+        android:id="@+id/btnIdentifyCar"
+        android:layout_width="245dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="80dp"
+        android:onClick="clickIdentifyCar"
+        android:text="Identify The Car"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIdentifyBrand" />
+
+    <TextView
+        android:id="@+id/textViewCars"
+        android:layout_width="116dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="148dp"
+        android:text="Cars"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnIdentifyBrand"
+        android:layout_width="245dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="80dp"
+        android:onClick="clickIdentifyBrand"
+        android:text="Identify the Brand"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCars" />
+
+    <Switch
+        android:id="@+id/ToggleTimer"
+        android:layout_width="150dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="36dp"
+        android:text="Toggle Timer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSearchCarBrand" />
+</androidx.constraintlayout.widget.ConstraintLayout>
